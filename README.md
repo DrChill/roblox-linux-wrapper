@@ -3,10 +3,15 @@
 ## Information
 This script is not created nor supported officially by Roblox. It is unofficial and may be unstable. Use at your own risk.
 
-### Usage
-To install Roblox on your Linux computer, download this script, mark it as executable, and run it. The script will automatically generate a wine prefix with Roblox installed, along with the Microsoft Windows build of Mozilla Firefox for launching games. If you would like to install the Roblox Linux Wrapper to your system, select the install option and it will place the launcher in your system's application menu.
+#### Usage
+To install Roblox on your Linux computer, download rlw.sh, mark it as executable, and run it. The script will automatically generate a wine prefix with Roblox installed, along with the Microsoft Windows build of Mozilla Firefox for launching games. If you would like to install the Roblox Linux Wrapper to your system, select the install option and it will place the launcher in your system's application menu. Once installed, the launcher will automatically update whenever an update is available, so this is a highly recommended option.
 
-### Questions and Answers
+#### Questions and Answers
+Q: How does it work?
+A: Roblox Linux Wrapper is a shell script which installs the Microsoft Windows versions of Roblox and Mozilla Firefox within a folder that Wine generated. (see winehq.org for more info). After Roblox has been set up, it allows you to play Roblox by loading Mozilla Firefox in Wine, then launching the Windows version of Roblox.
+
+Diagram: Roblox Linux Wrapper > Wine > Firefox.exe > RobloxPlayer.exe
+
 Q: How can I install this?
 A: See the usage section.
 
@@ -27,10 +32,11 @@ A: This is the old method used to launch games. Paste the game link in and click
 
 
 ## Dependencies
-     - wget wine zenity
+	rlw.sh: shasum wget wine zenity
+	rlw-stub.sh: wget shasum zenity
     
   [1]: https://github.com/alfonsojon/roblox-linux-wrapper/issues
 
-## Spare change?
+### Spare change?
 If you like my work, feel free to buy me a coffee.
 [![PayPal - The safer, easier way to pay online!](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4LPXB3QJWVFQ6)
