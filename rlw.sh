@@ -18,8 +18,13 @@
 #  MA 02110-1301, USA.
 #
 #
+<<<<<<< HEAD
 export RLWVERSION=2.1
 export RLWCHANNEL=SNAPSHOT
+=======
+export RLWVERSION=2.0.2
+export RLWCHANNEL=STABLE
+>>>>>>> c635b1d1e65180f626f3623be83435d6701683cb
 export WINEPREFIX=$HOME/.local/share/wineprefixes/Roblox
 export WINETRICKSDEV=/tmp/winetricks
 export WINEARCH=win32
@@ -65,11 +70,19 @@ download () {
 		--height=122
 }
 
+<<<<<<< HEAD
 if [[ -e $HOME/.local/share/icons/roblox.png ]]; then
 	export RBXICON=$HOME/.local/share/icons/roblox.png
 else
 	download http://img1.wikia.nocookie.net/__cb20130302012343/robloxhelp/images/f/fb/ROBLOX_Circle_Logo.png $HOME/.local/share/icons/roblox.png
 	export RBXICON=$HOME/.local/share/icons/roblox.png
+=======
+if [[ -e $HOME/.local/share/icons/hicolor/512x512/apps/roblox.png ]]; then
+	export RBXICON=$HOME/.local/share/icons/hicolor/512x512/apps/roblox.png
+else
+	download http://img1.wikia.nocookie.net/__cb20130302012343/robloxhelp/images/f/fb/ROBLOX_Circle_Logo.png $HOME/.local/share/icons/hicolor/512x512/apps/roblox.png
+	export RBXICON=$HOME/.local/share/icons/hicolor/512x512/apps/roblox.png
+>>>>>>> c635b1d1e65180f626f3623be83435d6701683cb
 fi
 
 depcheck () {
@@ -118,7 +131,11 @@ depcheck () {
 			--height=122
 		/tmp/winetricks -q ddr=gdi flash orm=fbo pdh vcrun2012 winhttp wininet | zenity \
 			--window-icon=$RBXICON \
+<<<<<<< HEAD
 			--title='' \
+=======
+			--title='Running winetricks' \
+>>>>>>> c635b1d1e65180f626f3623be83435d6701683cb
 			--text='Running winetricks ...' \
 			--progress \
 			--pulsate \
@@ -128,8 +145,13 @@ depcheck () {
 			--height=122
 		wine /tmp/RobloxPlayerLauncher.exe | zenity \
 			--window-icon=$RBXICON \
+<<<<<<< HEAD
 			--title='ROBLOX Player' \
 			--text='Installing ROBLOX Player ...' \
+=======
+			--title='Installing Roblox' \
+			--text='Installing Roblox ...' \
+>>>>>>> c635b1d1e65180f626f3623be83435d6701683cb
 			--progress \
 			--pulsate \
 			--no-cancel \
@@ -148,9 +170,14 @@ depcheck () {
 			--progress \
 			--pulsate \
 			--no-cancel \
+<<<<<<< HEAD
 			--auto-close \
 			--width=362 \
 			--height=122
+=======
+			--auto-close
+		removeicons
+>>>>>>> c635b1d1e65180f626f3623be83435d6701683cb
 	fi
 }
 
@@ -283,7 +310,10 @@ main () {
 		main;;
 	'Uninstall Roblox Linux Wrapper')
 		xdg-desktop-menu uninstall $HOME/.local/share/applications/Roblox.desktop
+<<<<<<< HEAD
 		cd $HOME
+=======
+>>>>>>> c635b1d1e65180f626f3623be83435d6701683cb
 		rm -rf $HOME/.rlw
 		if [[ -e $HOME/.local/share/icons/roblox.png ]]; then
 			rm -rf $HOME/.local/share/icons/roblox.png
