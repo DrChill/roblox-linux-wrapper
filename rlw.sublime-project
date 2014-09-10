@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"name": "Source"
+		},
+	],
+	"settings":
+	{
+		"tab_size": 4,
+		"translate_tabs_to_spaces": false,
+		"indent_using_spaces": false,
+		"detect_indentation": false,
+	}
+}
+
